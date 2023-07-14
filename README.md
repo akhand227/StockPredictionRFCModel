@@ -6,17 +6,11 @@ Predicting Directionality of Tomorrow's Closing Price for Any Stock through Hist
 ## Data
 Data can be customized by the user by running `search_stocks()` function and providing the stock symbol. For eg: AMZN for Amazon. The data is sourced from yfinance library.
 
-### Evaluation
-**Trained on the following models:**
- - k-nearest-neighbors
- - RandomForestClassifier
- - LogisticRegression
-
-**Model**
+## Model
  - RandomForestClassifier was used to predict whether the stock price will rise(1) or not (0). 
 
-At or above 80% accuracy we consider our model as successful. 
-For evaluation check: credit-card-default-payment-prediction.ipynb 
+## Evaluation
+Using ``` precision_score from sklearn.metrics``` to check how accurate our RFC model is in comparison to actual values. 
 
 ### Data Features
 This dataset used was scraped directly from yfinance. After training and testing the model it is our clear we need more features in our dataset. The features used to train our sotkc price data:
